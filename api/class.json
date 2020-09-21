@@ -1,0 +1,69 @@
+
+{
+  "code": 0,
+  "msg": "",
+  "count": 10,
+  "data": [
+    {
+      "id": 1,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    },   {
+      "id": 2,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    },   {
+      "id": 3,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    },   {
+      "id": 4,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    },   {
+      "id": 5,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    },   {
+      "id": 6,
+      "majorname": "物联网工程",
+      "cno": "1001",
+      "period": "2015",
+      "joinDate": "2015-11-04",
+      "classNum": 49,
+      "classTeacher": "张三",
+      "instructor": "李四"
+
+    }
+  ]
+}

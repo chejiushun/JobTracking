@@ -1,0 +1,32 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 10,
+  "data": [
+    {
+      "id": 1,
+      "majorname": "网络工程",
+      "createtime": "2019-05-05 04:34:06",
+      "remark": "网络工程"
+
+    },
+    {
+      "id": 2,
+      "majorname": "物联网工程",
+      "createtime": "2019-05-05 04:34:06",
+      "remark": "物联网工程"
+    },
+    {
+      "id": 3,
+      "majorname": "计算机科学与技术",
+      "createtime": "2019-05-05 04:34:06",
+      "remark": "计算机科学与技术"
+    },
+    {
+      "id": 4,
+      "majorname": "软件工程",
+      "createtime": "2019-05-05 04:34:06",
+      "remark": "软件工程"
+    }
+  ]
+}
