@@ -65,7 +65,7 @@ layui.use(['form', 'layer', 'laydate'], function() {
 	// 成员人数统计饼图
 	var pienum = {
 	    title : {
-	        text: '根据各年级统计成员人数饼图',
+	        text: '应届毕业生就业去向饼图',
 	        x:'center'
 	    },
 	    tooltip : {
@@ -75,20 +75,19 @@ layui.use(['form', 'layer', 'laydate'], function() {
 	    legend: {
 	        orient: 'vertical',
 	        left: 'left',
-	        data: ['大一','大二','大三','大四','毕业']
+	        data: ['北上广等一线城市','二三线城市','四五线小城市','家乡所在城市']
 	    },
 	    series : [
 	        {
-	            name: '成员来源',
+	            name: '就业城市',
 	            type: 'pie',
 	            radius : '55%',
 	            center: ['50%', '60%'],
 	            data:[
-	                {value:335, name:'大一'},
-	                {value:560, name:'大二'},
-	                {value:800, name:'大三'},
-	                {value:300, name:'大四'},
-	                {value:150, name:'毕业'}
+	                {value:1835, name:'北上广等一线城市'},
+	                {value:1160, name:'二三线城市'},
+	                {value:621, name:'四五线小城市'},
+	                {value:433, name:'家乡所在城市'},
 	            ],
 	            itemStyle: {
 	                emphasis: {
@@ -103,7 +102,7 @@ layui.use(['form', 'layer', 'laydate'], function() {
 	// 各院系成员统计饼图
 	var piewin = {
 	    title : {
-	        text: '根据各院系统计成员饼图',
+	        text: '应届毕业生从业类型饼图',
 	        x:'center'
 	    },
 	    tooltip : {
@@ -113,20 +112,19 @@ layui.use(['form', 'layer', 'laydate'], function() {
 	    legend: {
 	        orient: 'vertical',
 	        left: 'left',
-	        data: ['计算机科学与技术学院','应用科学学院','电子信息工程学院','机械工程学院','材料科学与工程学院']
+	        data: ['本专业相关工作','非本专业相关工作','创业','服兵役']
 	    },
 	    series : [
 	        {
-	            name: '成员来源',
+	            name: '就业类型',
 	            type: 'pie',
 	            radius : '55%',
 	            center: ['50%', '60%'],
 	            data:[
-	                {value:1500, name:'计算机科学与技术学院'},
-	                {value:410, name:'应用科学学院'},
-	                {value:556, name:'电子信息工程学院'},
-	                {value:335, name:'机械工程学院'},
-	                {value:148, name:'材料科学与工程学院'}
+	                {value:3291, name:'本专业相关工作'},
+	                {value:665, name:'非本专业相关工作'},
+	                {value:145, name:'创业'},
+	                {value:53, name:'服兵役'},
 	            ],
 	            itemStyle: {
 	                emphasis: {
@@ -166,12 +164,12 @@ layui.use(['form', 'layer', 'laydate'], function() {
 		},
 	    dataset: {
 	        source: [
-	            ['product', '2018', '2019'],
-	            ['软件工程', 43.3,  93.7],
-	            ['计算机科学与技术', 83.1,  55.1],
-	            ['网络工程', 86.4, 82.5],
-	            ['数字媒体技术', 72.4, 39.1],
-	            ['物联网工程', 72.4, 39.1]
+	            ['product', '就业人数', '暂未就业人数'],
+	            ['2016年', 3600,  2561],
+	            ['2017年', 4342,  1821],
+	            ['2018年', 3720, 2400],
+	            ['2019年', 3560, 2560],
+	            ['2020年', 4154, 1974]
 	        ]
 	    },
 	    xAxis: {type: 'category'},

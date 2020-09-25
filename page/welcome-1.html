@@ -1,34 +1,48 @@
-<style>
-    .welcome .layui-card {border:1px solid #f2f2f2;border-radius:5px;}
-    .welcome .icon {margin-right:10px;color:#1aa094;}
-    .welcome .icon-cray {color:#ffb800 !important;}
-    .welcome .icon-blue {color:#1e9fff !important;}
-    .welcome .icon-tip {color:#ff5722 !important;}
-    .welcome .layuimini-qiuck-module {text-align:center;margin-top:10px}
-    .welcome .layuimini-qiuck-module a i {display:inline-block;width:100%;height:60px;line-height:60px;text-align:center;border-radius:2px;font-size:30px;background-color:#F8F8F8;color:#333;transition:all .3s;-webkit-transition:all .3s;}
-    .welcome .layuimini-qiuck-module a cite {position:relative;top:2px;display:block;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:14px;}
-    .welcome .welcome-module {width:100%;height:210px;}
-    .welcome .panel {background-color:#fff;border:1px solid transparent;border-radius:3px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);box-shadow:0 1px 1px rgba(0,0,0,.05)}
-    .welcome .panel-body {padding:10px}
-    .welcome .panel-title {margin-top:0;margin-bottom:0;font-size:12px;color:inherit}
-    .welcome .label {display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em;margin-top:.3em;}
-    .welcome .layui-red {color:red}
-    .welcome .main_btn > p {height:40px;}
-    .welcome .layui-bg-number {background-color:#F8F8F8;}
-    .welcome .layuimini-notice:hover {background:#f6f6f6;}
-    .welcome .layuimini-notice {padding:7px 16px;clear:both;font-size:12px !important;cursor:pointer;position:relative;transition:background 0.2s ease-in-out;}
-    .welcome .layuimini-notice-title,.layuimini-notice-label {padding-right:70px !important;text-overflow:ellipsis !important;overflow:hidden !important;white-space:nowrap !important;}
-    .welcome .layuimini-notice-title {line-height:28px;font-size:14px;}
-    .welcome .layuimini-notice-extra {position:absolute;top:50%;margin-top:-8px;right:16px;display:inline-block;height:16px;color:#999;}
-</style>
-<div class="layuimini-container layuimini-page-anim">
-    <div class="layuimini-main welcome">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页二</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../lib/layui-v2.5.5/css/layui.css" media="all">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+    <style>
+        .layui-card {border:1px solid #f2f2f2;border-radius:5px;}
+        .icon {margin-right:10px;color:#1aa094;}
+        .icon-cray {color:#ffb800!important;}
+        .icon-blue {color:#1e9fff!important;}
+        .icon-tip {color:#ff5722!important;}
+        .layuimini-qiuck-module {text-align:center;margin-top: 10px}
+        .layuimini-qiuck-module a i {display:inline-block;width:100%;height:60px;line-height:60px;text-align:center;border-radius:2px;font-size:30px;background-color:#F8F8F8;color:#333;transition:all .3s;-webkit-transition:all .3s;}
+        .layuimini-qiuck-module a cite {position:relative;top:2px;display:block;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;font-size:14px;}
+        .welcome-module {width:100%;height:210px;}
+        .panel {background-color:#fff;border:1px solid transparent;border-radius:3px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);box-shadow:0 1px 1px rgba(0,0,0,.05)}
+        .panel-body {padding:10px}
+        .panel-title {margin-top:0;margin-bottom:0;font-size:12px;color:inherit}
+        .label {display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em;margin-top: .3em;}
+        .layui-red {color:red}
+        .main_btn > p {height:40px;}
+        .layui-bg-number {background-color:#F8F8F8;}
+        .layuimini-notice:hover {background:#f6f6f6;}
+        .layuimini-notice {padding:7px 16px;clear:both;font-size:12px !important;cursor:pointer;position:relative;transition:background 0.2s ease-in-out;}
+        .layuimini-notice-title,.layuimini-notice-label {
+            padding-right: 70px !important;text-overflow:ellipsis!important;overflow:hidden!important;white-space:nowrap!important;}
+        .layuimini-notice-title {line-height:28px;font-size:14px;}
+        .layuimini-notice-extra {position:absolute;top:50%;margin-top:-8px;right:16px;display:inline-block;height:16px;color:#999;}
+    </style>
+</head>
+<body>
+<div class="layuimini-container">
+    <div class="layuimini-main">
         <div class="layui-row layui-col-space15">
             <div class="layui-col-md8">
                 <div class="layui-row layui-col-space15">
                     <div class="layui-col-md6">
                         <div class="layui-card">
-                            <div class="layui-card-header"><i class="fa fa-warning icon"></i>数据统计</div>
+                            <div class="layui-card-header"><i class="fa fa-warning icon"></i>往年数据统计</div>
                             <div class="layui-card-body">
                                 <div class="welcome-module">
                                     <div class="layui-row layui-col-space10">
@@ -37,10 +51,10 @@
                                                 <div class="panel-body">
                                                     <div class="panel-title">
                                                         <span class="label pull-right layui-bg-blue">实时</span>
-                                                        <h5>用户统计</h5>
+                                                        <h5>毕业生人数</h5>
                                                     </div>
                                                     <div class="panel-content">
-                                                        <h1 class="no-margins">1234</h1>
+                                                        <h1 class="no-margins">6128</h1>
                                                         <small>当前分类总记录数</small>
                                                     </div>
                                                 </div>
@@ -51,10 +65,10 @@
                                                 <div class="panel-body">
                                                     <div class="panel-title">
                                                         <span class="label pull-right layui-bg-cyan">实时</span>
-                                                        <h5>商品统计</h5>
+                                                        <h5>就业人数</h5>
                                                     </div>
                                                     <div class="panel-content">
-                                                        <h1 class="no-margins">1234</h1>
+                                                        <h1 class="no-margins">4154</h1>
                                                         <small>当前分类总记录数</small>
                                                     </div>
                                                 </div>
@@ -65,10 +79,10 @@
                                                 <div class="panel-body">
                                                     <div class="panel-title">
                                                         <span class="label pull-right layui-bg-orange">实时</span>
-                                                        <h5>浏览统计</h5>
+                                                        <h5>读研人数</h5>
                                                     </div>
                                                     <div class="panel-content">
-                                                        <h1 class="no-margins">1234</h1>
+                                                        <h1 class="no-margins">545</h1>
                                                         <small>当前分类总记录数</small>
                                                     </div>
                                                 </div>
@@ -79,10 +93,10 @@
                                                 <div class="panel-body">
                                                     <div class="panel-title">
                                                         <span class="label pull-right layui-bg-green">实时</span>
-                                                        <h5>订单统计</h5>
+                                                        <h5>暂未就业人数</h5>
                                                     </div>
                                                     <div class="panel-content">
-                                                        <h1 class="no-margins">1234</h1>
+                                                        <h1 class="no-margins">1429</h1>
                                                         <small>当前分类总记录数</small>
                                                     </div>
                                                 </div>
@@ -100,62 +114,63 @@
                                 <div class="welcome-module">
                                     <div class="layui-row layui-col-space10 layuimini-qiuck">
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/menu.html" data-title="菜单管理" data-icon="fa fa-window-maximize">
-                                                <i class="fa fa-window-maximize"></i>
-                                                <cite>菜单管理</cite>
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/dept/findMajor.html" layuimini-content-href="page/dept/findMajor.html" data-title="专业管理" data-icon="fa fa-university">
+                                                <i class="fa fa-university"></i>
+                                                <cite>专业管理</cite>
                                             </a>
                                         </div>
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/setting.html" data-title="系统设置" data-icon="fa fa-gears">
-                                                <i class="fa fa-gears"></i>
-                                                <cite>系统设置</cite>
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/class/findClass.html" layuimini-content-href="page/department/findMajor.html" data-title="查询班级" data-icon="fa ffa-group">
+                                                <i class="fa fa-group"></i>
+                                                <cite>查询班级</cite>
+                                            </a>
+                                        </div>
+
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/student/findStudent.html" layuimini-content-href="page/member/findMember.html" data-title="查询学生" data-icon="fa fa-user-plus">
+                                                <i class="fa fa-user-plus"></i>
+                                                <cite>查询学生</cite>
                                             </a>
                                         </div>
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/table.html" data-title="表格示例" data-icon="fa fa-file-text">
-                                                <i class="fa fa-file-text"></i>
-                                                <cite>表格示例</cite>
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/student/statisStudent.html" layuimini-content-href="page/statis/statisMember.html" data-title="学生统计" data-icon="fa fa-pie-chart">
+                                                <i class="fa fa-pie-chart"></i>
+                                                <cite>学生统计</cite>
                                             </a>
                                         </div>
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/icon.html" data-title="图标列表" data-icon="fa fa-dot-circle-o">
-                                                <i class="fa fa-dot-circle-o"></i>
-                                                <cite>图标列表</cite>
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/company/findCompany.html" layuimini-content-href="page/competition/findCompet.html" data-title="合作企业" data-icon="fa fa-trophy">
+                                                <i class="fa fa-trophy"></i>
+                                                <cite>合作企业</cite>
                                             </a>
                                         </div>
+
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/form.html" data-title="表单示例" data-icon="fa fa-calendar">
-                                                <i class="fa fa-calendar"></i>
-                                                <cite>表单示例</cite>
-                                            </a>
-                                        </div>
-                                        <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/404.html" data-title="404页面" data-icon="fa fa-hourglass-end">
-                                                <i class="fa fa-hourglass-end"></i>
-                                                <cite>404页面</cite>
-                                            </a>
-                                        </div>
-                                        <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/button.html" data-title="按钮示例" data-icon="fa fa-snowflake-o">
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/company/findHiringRecord.html" layuimini-content-href="page/openclass/findClass.html" data-title="专场招聘会" data-icon="fa fa-snowflake-o">
                                                 <i class="fa fa-snowflake-o"></i>
-                                                <cite>按钮示例</cite>
+                                                <cite>专场招聘会</cite>
                                             </a>
                                         </div>
                                         <div class="layui-col-xs3 layuimini-qiuck-module">
-                                            <a href="javascript:;" layuimini-content-href="page/layer.html" data-title="弹出层" data-icon="fa fa-shield">
-                                                <i class="fa fa-shield"></i>
-                                                <cite>弹出层</cite>
+                                            <a href="http://localhost:63342/layuimini/layuimini/page/user/queryUser.html" layuimini-content-href="page/credit/findCredit.html" data-title="管理员" data-icon="fa fa-search">
+                                                <i class="fa fa-search"></i>
+                                                <cite>管理员</cite>
+                                            </a>
+                                        </div>
+                                        <div class="layui-col-xs3 layuimini-qiuck-module">
+                                            <a href="http://www.baidu.com" layuimini-content-href="page/icon.html" data-title="百度" data-icon="fa fa-bar-chart">
+                                                <i class="fa fa-bar-chart"></i>
+                                                <cite>百度</cite>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <div class="layui-col-md12">
                         <div class="layui-card">
-                            <div class="layui-card-header"><i class="fa fa-line-chart icon"></i>报表统计</div>
+                            <div class="layui-card-header"><i class="fa fa-line-chart icon"></i><strong>科大应届毕业生就业趋势</strong></div>
                             <div class="layui-card-body">
                                 <div id="echarts-records" style="width: 100%;min-height:500px"></div>
                             </div>
@@ -170,88 +185,31 @@
                     <div class="layui-card-header"><i class="fa fa-bullhorn icon icon-tip"></i>系统公告</div>
                     <div class="layui-card-body layui-text">
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">修改选项卡样式</div>
-                            <div class="layuimini-notice-extra">2019-07-11 23:06</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
+                            <div class="layuimini-notice-title">科蓝有限公司专场招聘</div>
+                            <div class="layuimini-notice-extra">2020-07-11 23:06</div>
+
                         </div>
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">新增系统404模板</div>
-                            <div class="layuimini-notice-extra">2019-07-11 12:57</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
+                            <div class="layuimini-notice-title">北上广等一线城市就业近年趋势</div>
+                            <div class="layuimini-notice-extra">2020-07-11 12:57</div>
                         </div>
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">新增treetable插件和菜单管理样式</div>
-                            <div class="layuimini-notice-extra">2019-07-05 14:28</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
+                            <div class="layuimini-notice-title">科大就业专场招聘会即将开始</div>
+                            <div class="layuimini-notice-extra">2020-07-05 14:28</div>
                         </div>
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">修改logo缩放问题</div>
-                            <div class="layuimini-notice-extra">2019-07-04 11:02</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
+                            <div class="layuimini-notice-title">网络投递简历系统即将关闭</div>
+                            <div class="layuimini-notice-extra">2020-07-04 11:02</div>
+
                         </div>
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">修复左侧菜单缩放tab无法移动</div>
-                            <div class="layuimini-notice-extra">2019-06-17 11:55</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
+                            <div class="layuimini-notice-title">恭喜我校王刚同学入职阿里巴巴</div>
+                            <div class="layuimini-notice-extra">2020-06-17 11:55</div>
+
                         </div>
                         <div class="layuimini-notice">
-                            <div class="layuimini-notice-title">修复多模块菜单栏展开有问题</div>
+                            <div class="layuimini-notice-title">太原IT企业近年来招聘趋势</div>
                             <div class="layuimini-notice-extra">2019-06-13 14:53</div>
-                            <div class="layuimini-notice-content layui-hide">
-                                界面足够简洁清爽。<br>
-                                一个接口几行代码而已直接初始化整个框架，无需复杂操作。<br>
-                                支持多tab，可以打开多窗口。<br>
-                                支持无限级菜单和对font-awesome图标库的完美支持。<br>
-                                失效以及报错菜单无法直接打开，并给出弹出层提示完美的线上用户体验。<br>
-                                url地址hash定位，可以清楚看到当前tab的地址信息。<br>
-                                刷新页面会保留当前的窗口，并且会定位当前窗口对应左侧菜单栏。<br>
-                                移动端的友好支持。<br>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,51 +224,26 @@
                             </colgroup>
                             <tbody>
                             <tr>
-                                <td>框架名称</td>
+                                <td>项目名称</td>
                                 <td>
-                                    layuimini
+                                   就业跟踪平台
                                 </td>
                             </tr>
                             <tr>
                                 <td>当前版本</td>
-                                <td>v2.0.0</td>
+                                <td>测试版</td>
                             </tr>
                             <tr>
                                 <td>主要特色</td>
-                                <td>零门槛 / 响应式 / 清爽 / 极简</td>
+                                <td>响应式 / 清爽 / 极简 /支持移动端</td>
                             </tr>
                             <tr>
-                                <td>演示地址</td>
+                                <td>开发者</td>
                                 <td>
-                                    iframe版-v2：<a href="http://layuimini.99php.cn/iframe/v2/index.html" target="_blank">点击查看</a><br>
-                                    单页版-v2：<a href="http://layuimini.99php.cn/onepage/v2/index.html" target="_blank">点击查看</a><br>
+                                    chejiushun
                                 </td>
                             </tr>
-                            <tr>
-                                <td>下载地址</td>
-                                <td>
-                                    iframe版-v2：<a href="https://github.com/zhongshaofa/layuimini/tree/v2" target="_blank">github</a> / <a href="https://gitee.com/zhongshaofa/layuimini/tree/v2" target="_blank">gitee</a><br>
-                                    单页版-v2：<a href="https://github.com/zhongshaofa/layuimini/tree/v2-onepage" target="_blank">github</a> / <a href="https://gitee.com/zhongshaofa/layuimini/tree/v2-onepage" target="_blank">gitee</a><br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Gitee</td>
-                                <td style="padding-bottom: 0;">
-                                    <div class="layui-btn-container">
-                                        <a href="https://gitee.com/zhongshaofa/layuimini" target="_blank" style="margin-right: 15px"><img src="https://gitee.com/zhongshaofa/layuimini/badge/star.svg?theme=dark" alt="star"></a>
-                                        <a href="https://gitee.com/zhongshaofa/layuimini" target="_blank"><img src="https://gitee.com/zhongshaofa/layuimini/badge/fork.svg?theme=dark" alt="fork"></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Github</td>
-                                <td style="padding-bottom: 0;">
-                                    <div class="layui-btn-container">
-                                        <iframe src="https://ghbtns.com/github-btn.html?user=zhongshaofa&repo=layuimini&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                                        <iframe src="https://ghbtns.com/github-btn.html?user=zhongshaofa&repo=layuimini&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-                                    </div>
-                                </td>
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>
@@ -319,9 +252,8 @@
                 <div class="layui-card">
                     <div class="layui-card-header"><i class="fa fa-paper-plane-o icon"></i>作者心语</div>
                     <div class="layui-card-body layui-text layadmin-text">
-                        <p>本模板基于layui2.5.4以及font-awesome-4.7.0进行实现。layui开发文档地址：<a class="layui-btn layui-btn-xs layui-btn-danger" target="_blank" href="http://www.layui.com/doc">layui文档</a></p>
-                        <p>技术交流QQ群（667813249）：<a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5lyiE2Q"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="layuimini" title="layuimini"></a>（加群请备注来源：如gitee、github、官网等）</p>
-                        <p>喜欢此后台模板的可以给我的GitHub和Gitee加个Star支持一下</p>
+                        <p>本平台基于layuimini的iframe2版本进行开放实现。</p>
+                        <p>码云地址：<a target="_blank" href="https://github.com/gcc6666">https://github.com/gcc6666</a></p>
                     </div>
                 </div>
 
@@ -329,116 +261,145 @@
         </div>
     </div>
 </div>
+<script src="../lib/layui-v2.5.5/layui.js"></script>
+<script src="../js/lay-config.js?v=1.0.4"></script>
+<script src="../js/lay-module/echarts/echarts.js"></script>
+<script src="../js/lay-module/echarts/echartsTheme.js"></script>
 <script>
-    layui.use(['layer','echarts'], function () {
-        var $ = layui.jquery,
-            layer = layui.layer,
-            echarts = layui.echarts;
+    layui.use(['layer', 'echarts'], function () {
+        var echarts=layui.echarts,
+            layer = layui.layer;
+        var echartsRecords = echarts.init(document.getElementById('echarts-records'));
+        var option = {
+            title: {
+                text: '折线图堆叠'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['毕业生人数', '就业人数', '读研人数', '暂未就业人数']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            toolbox: {
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['2014年', '2015年', '2016年', '2017年', '2018年', '2019年', '2020年']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [
+                {
+                    name: '毕业生人数',
+                    type: 'line',
+                    data: [6211, 6177, 6161, 6163, 6120, 6120, 6128]
+                },
+                {
+                    name: '就业人数',
+                    type: 'line',
+                    data: [4700, 4565, 4521, 4421,4323, 4300, 4154]
+                },
+                {
+                    name: '读研人数',
+                    type: 'line',
+                    data: [250, 332, 301, 404, 446, 490, 545]
+                },
+                {
+                    name: '暂未就业人数',
+                    type: 'line',
+                    data: [1261, 1280, 1339, 1338,1351, 1330, 1429]
+                },
+            ]
+        };
+
+
+        echartsRecords.setOption(option);
+
 
         /**
          * 查看公告信息
          **/
-        $('body').on('click', '.layuimini-notice', function () {
-            var title = $(this).children('.layuimini-notice-title').text(),
-                noticeTime = $(this).children('.layuimini-notice-extra').text(),
-                content = $(this).children('.layuimini-notice-content').html();
-            var html = '<div style="padding:15px 20px; text-align:justify; line-height: 22px;border-bottom:1px solid #e2e2e2;background-color: #2f4056;color: #ffffff">\n' +
-                '<div style="text-align: center;margin-bottom: 20px;font-weight: bold;border-bottom:1px solid #718fb5;padding-bottom: 5px"><h4 class="text-danger">' + title + '</h4></div>\n' +
-                '<div style="font-size: 12px">' + content + '</div>\n' +
-                '</div>\n';
-            parent.layer.open({
-                type: 1,
-                title: '系统公告' + '<span style="float: right;right: 1px;font-size: 12px;color: #b1b3b9;margin-top: 1px">' + noticeTime + '</span>',
-                area: '300px;',
-                shade: 0.8,
-                id: 'layuimini-notice',
-                btn: ['查看', '取消'],
-                btnAlign: 'c',
-                moveType: 1,
-                content: html,
-                success: function (layero) {
-                    var btn = layero.find('.layui-layer-btn');
-                    btn.find('.layui-layer-btn0').attr({
-                        href: 'https://gitee.com/zhongshaofa/layuimini',
-                        target: '_blank'
-                    });
+        window.onresize = function(){
+            echartsRecords.resize();
+        }
+
+    });
+
+    layui.use(['layer', 'echarts'], function () {
+        var echarts=layui.echarts,
+            layer = layui.layer;
+        var echartsRecords = echarts.init(document.getElementById('echarts-records2'));
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [120, 200, 150, 80, 70, 110, 130],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(220, 220, 220, 0.8)'
                 }
-            });
-        });
+            }]
+        };
+
+        echartsRecords.setOption(option);
+
 
         /**
-         * 报表功能
-         */
-       var echartsRecords = echarts.init(document.getElementById('echarts-records'));
-        var option = {
-            backgroundColor: '#2c343c',
-            title: {
-                text: '统计图',
-                left: 'center',
-                top: 20,
-                textStyle: {
-                    color: '#ccc'
-                }
-            },
-        
-            tooltip: {
-                trigger: 'item',
-                formatter: '{a} <br/>{b} : {c} ({d}%)'
-            },
-        
-            visualMap: {
-                show: false,
-                min: 80,
-                max: 600,
-                inRange: {
-                    colorLightness: [0, 1]
-                }
-            },
-            series: [
-                {
-                    name: '访问来源',
-                    type: 'pie',
-                    radius: '55%',
-                    center: ['50%', '50%'],
-                    data:  [
-            {value: 335, name: '大一'},
-            {value: 310, name: '大二'},
-            {value: 274, name: '大三'},
-            {value: 235, name: '大四'},
-            {value: 400, name: '毕业'}
-        ].sort(function (a, b) { return a.value - b.value; }),
-                    roseType: 'radius',
-                    label: {
-                        color: 'rgba(255, 255, 255, 0.3)'
-                    },
-                    labelLine: {
-                        lineStyle: {
-                            color: 'rgba(255, 255, 255, 0.3)'
-                        },
-                        smooth: 0.2,
-                        length: 10,
-                        length2: 20
-                    },
-                    itemStyle: {
-                        color: '#ff0000',
-                        shadowBlur: 200,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    },
-        
-                    animationType: 'scale',
-                    animationEasing: 'elasticOut',
-                    animationDelay: function (idx) {
-                        return Math.random() * 200;
-                    }
-                }
-            ]
-        };
-       echartsRecords.setOption(option);
+         * 查看公告信息
+         **/
+        // $('body').on('click', '.layuimini-notice', function () {
+        //     var title = $(this).children('.layuimini-notice-title').text(),
+        //         noticeTime = $(this).children('.layuimini-notice-extra').text(),
+        //         content = $(this).children('.layuimini-notice-content').html();
+        //     var html = '<div style="padding:15px 20px; text-align:justify; line-height: 22px;border-bottom:1px solid #e2e2e2;background-color: #2f4056;color: #ffffff">\n' +
+        //         '<div style="text-align: center;margin-bottom: 20px;font-weight: bold;border-bottom:1px solid #718fb5;padding-bottom: 5px"><h4 class="text-danger">' + title + '</h4></div>\n' +
+        //         '<div style="font-size: 12px">' + content + '</div>\n' +
+        //         '</div>\n';
+        //     parent.layer.open({
+        //         type: 1,
+        //         title: '系统公告'+'<span style="float: right;right: 1px;font-size: 12px;color: #b1b3b9;margin-top: 1px">'+noticeTime+'</span>',
+        //         area: '300px;',
+        //         shade: 0.8,
+        //         id: 'layuimini-notice',
+        //         btn: ['查看', '取消'],
+        //         btnAlign: 'c',
+        //         moveType: 1,
+        //         content:html,
+        //         success: function (layero) {
+        //             var btn = layero.find('.layui-layer-btn');
+        //             btn.find('.layui-layer-btn0').attr({
+        //                 href: 'https://gitee.com/zhongshaofa/layuimini',
+        //                 target: '_blank'
+        //             });
+        //         }
+        //     });
+        // });
+
 
         // echarts 窗口缩放自适应
-        window.onresize = function () {
+        window.onresize = function(){
             echartsRecords.resize();
         }
 
     });
 </script>
+
+</body>
+</html>

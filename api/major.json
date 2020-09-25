@@ -5,28 +5,39 @@
   "data": [
     {
       "id": 1,
-      "majorname": "网络工程",
-      "createtime": "2019-05-05 04:34:06",
-      "remark": "网络工程"
-
-    },
-    {
+      "dname": "计算机科学与技术",
+      "createTime": "2016-01-10",
+      "remark": "无"
+    },{
       "id": 2,
-      "majorname": "物联网工程",
-      "createtime": "2019-05-05 04:34:06",
-      "remark": "物联网工程"
-    },
-    {
+      "dname": "物联网工程",
+      "createTime": "2016-05-05",
+      "remark": "无"
+    },{
       "id": 3,
-      "majorname": "计算机科学与技术",
-      "createtime": "2019-05-05 04:34:06",
-      "remark": "计算机科学与技术"
-    },
-    {
+      "dname": "网络工程",
+      "createTime": "2016-10-12",
+      "remark": "无"
+    },{
       "id": 4,
-      "majorname": "软件工程",
-      "createtime": "2019-05-05 04:34:06",
-      "remark": "软件工程"
+      "dname": "软件工程",
+      "createTime": "2017-02-04",
+      "remark": "无"
+    },{
+      "id": 5,
+      "dname": "智能科学与技术",
+      "createTime": "2018-03-06",
+      "remark": "无"
+    },{
+      "id": 6,
+      "dname": "人工智能",
+      "createTime": "2019-05-29",
+      "remark": "新增专业"
+    },{
+      "id": 7,
+      "dname": "大数据",
+      "createTime": "2020-01-09",
+      "remark": "新增专业"
     }
   ]
 }

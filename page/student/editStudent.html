@@ -1,10 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>修改学生信息</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../lib/layui-v2.5.5/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../css/public.css" media="all">
+
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
 <div class="layui-form layuimini-form">
     <div class="layui-form-item">
         <label class="layui-form-label required">班号</label>
         <div class="layui-input-block" >
-            <select lay-verify="required" name="cno" id="cno">
+            <select lay-verify="required" >
                 <option>--请选择班级编号--</option>
-                <option value="1" >1001</option>
+                <option value="1" selected>1001</option>
                 <option value="2">1002</option>
                 <option value="3">1003</option>
             </select>
@@ -13,13 +31,13 @@
     <div class="layui-form-item">
         <label class="layui-form-label required">学号</label>
         <div class="layui-input-block" >
-            <input id="sno" type="text" name="sno" lay-verify="required" lay-reqtext="学号不能为空" placeholder="请输入学号" value="" class="layui-input">
+            <input id="sno" type="text" name="sno" lay-verify="required" lay-reqtext="学号不能为空" value="100201" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label required">姓名</label>
         <div class="layui-input-block" >
-            <input id="name" type="text" name="name" lay-verify="required" lay-reqtext="姓名不能为空" placeholder="请输入姓名" value="" class="layui-input">
+            <input id="name" type="text" name="name" lay-verify="required" lay-reqtext="姓名不能为空" value="张三" class="layui-input">
         </div>
     </div>
 
@@ -33,7 +51,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label required">出生日期</label>
         <div class="layui-input-block" >
-            <input id="birthday" type="text" name="birthday" placeholder="请选择出生日期" value="" class="layui-input" lay-verify="required" lay-reqtext="入学时间不能为空" readonly>
+            <input id="birthday" type="text" name="birthday" value="1997-11-04" class="layui-input" lay-verify="required" lay-reqtext="出生日期不能为空" readonly>
         </div>
     </div>
 
@@ -41,17 +59,17 @@
     <div class="layui-form-item" id="area-picker">
         <label class="layui-form-label required">籍贯</label>
         <div class="layui-input-inline" >
-            <select  id="province" name="province" class="province-selector" lay-filter="province-1" lay-verify="required" lay-reqtext="籍贯不能为空" readonly>
+            <select name="province" class="province-selector" data-value="山西省" lay-filter="province-1" lay-verify="required" lay-reqtext="籍贯不能为空" readonly>
                 <option value="">请选择省</option>
             </select>
         </div>
         <div class="layui-input-inline" >
-            <select id="city" name="city" class="city-selector" lay-filter="city-1" readonly>
+            <select name="city" class="city-selector" data-value="太原市" lay-filter="city-1" readonly>
                 <option value="">请选择市</option>
             </select>
         </div>
         <div class="layui-input-inline" >
-            <select id="county" name="county" class="county-selector"  lay-filter="county-1">
+            <select name="county" class="county-selector" data-value="迎泽区" lay-filter="county-1">
                 <option value="">请选择区</option>
             </select>
         </div>
@@ -62,20 +80,20 @@
     <div class="layui-form-item">
         <label class="layui-form-label required">QQ</label>
         <div class="layui-input-block" >
-            <input id="qq" type="text" name="qq"  placeholder="请输入QQ号码" value="" class="layui-input" lay-verify="required" lay-reqtext="QQ不能为空">
+            <input id="qq" type="text" name="qq"  value="45678909" class="layui-input" lay-verify="required" lay-reqtext="QQ不能为空">
         </div>
     </div>
 
     <div class="layui-form-item">
         <label class="layui-form-label required">微信号</label>
         <div class="layui-input-block" >
-            <input id="weixin" type="text" name="weixin"  placeholder="请输入微信号" value="" class="layui-input" lay-verify="required" lay-reqtext="微信号不能为空">
+            <input id="weixin" type="text" name="weixin"   value="zy520sy" class="layui-input" lay-verify="required" lay-reqtext="微信不能为空">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label required">联系方式</label>
         <div class="layui-input-block">
-            <input id="telephone" type="number" name="telephone" lay-verify="required" lay-reqtext="手机号码不能为空" placeholder="请输入手机号码" value="" class="layui-input">
+            <input id="telephone" type="number" name="telephone" value="13565456787" lay-verify="required" lay-reqtext="手机号码不能为空" placeholder="请输入手机号码" value="" class="layui-input">
         </div>
     </div>
 
@@ -83,40 +101,23 @@
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">备注</label>
         <div class="layui-input-block" >
-            <textarea id="remark" name="remark" class="layui-textarea" placeholder="请输入备注信息"></textarea>
+            <textarea name="remark" class="layui-textarea" placeholder="请输入备注信息"></textarea>
         </div>
     </div>
 
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
-            <button id="reset" class="layui-btn layui-btn-primary" type="reset" ><i class="layui-icon layui-icon-refresh"></i>重置信息</button>
         </div>
     </div>
 </div>
+<script src="../../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+
 <script>
     layui.use(['form'], function () {
         var form = layui.form,
             layer = layui.layer,
             $ = layui.$;
-
-        $("#reset").click(function () {
-            $("#cno").val("");
-            $("#sno").val("");
-            $("#name").val("");
-            $("input[name='sex']").prop('checked',false);
-            $("#birthday").val("");
-            $("#province").val("");
-            $("#city").val("");
-            $("#telephone").val("");
-            $("#county").val("");
-            $("#qq").val("");
-            $("#weixin").val("");
-            $("#telephone").val("");
-            $("#remark").val("");
-            form.render();
-        });
-
 
         // 3. 验证姓名，失去焦点时触发
         $("#name").blur(function(){
@@ -158,6 +159,18 @@
             }
         });
 
+        // 4. 验证校内职务，失去焦点时触发
+        $("#schooljob").blur(function(){
+            var schooljob = $("#schooljob").val();
+            var reg = /^[\u4e00-\u9fa5]{2,6}$/;//正则表达式,2-6个汉字
+            if(schooljob.length == 0|| schooljob==null || schooljob == '') {
+                layer.msg('校内职务不能为空', {icon: 5});
+            }else{
+                if(!reg.test(schooljob)) {
+                    layer.msg('格式不对，姓名为2-6个汉字', {icon: 5});
+                }
+            }
+        });
 
 
         //监听提交
@@ -222,6 +235,16 @@
         });
     })
 
+
+
+    // 三级联动的JS代码
+
+    //配置插件目录
+    layui.config({
+        base: '../js/lay-module/layarea/'
+        , version: '1.0'
+    });
+    //一般直接写在一个js文件中
     layui.use(['layer', 'form', 'layarea'], function () {
         var layer = layui.layer
             , form = layui.form
@@ -237,3 +260,5 @@
     });
 
 </script>
+</body>
+</html>
